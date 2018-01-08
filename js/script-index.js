@@ -6,6 +6,18 @@ $(document).ready( function(){
 });
 
 
+
+$(document).ready( function(){
+
+	//ocultamos la clase js-back con hide 
+	$(".js-back").hide();
+
+});
+
+
+
+
+
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
