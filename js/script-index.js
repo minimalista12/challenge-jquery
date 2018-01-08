@@ -2,7 +2,7 @@ $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-
+	
 
 	//ocultamos la clase js-back con hide 
 	$(".js-back").hide();
@@ -10,9 +10,6 @@ $(document).ready( function(){
 
     //llmamamos a la funcion desde DOM 
 	printNews();
-
-
-
 
 
 });
@@ -24,20 +21,23 @@ function printNews (){
 };
 
 
-
-
-	
-
-
-
-
-
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	//creamos una funcion que recorra todo el data recipesArray 
+	for (var i in recipesArray){
+		//mientras cumpla el parametro higlighted 
+		if (recipesArray[i]["highlighted"] === true) {
+			renderRecipe();
+
+		}
+	}
+
+
+
 }
 
 /*
