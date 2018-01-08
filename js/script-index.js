@@ -3,16 +3,30 @@ $(document).ready( function(){
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
-});
-
-
-
-$(document).ready( function(){
 
 	//ocultamos la clase js-back con hide 
 	$(".js-back").hide();
 
+
+    //llmamamos a la funcion desde DOM 
+	printNews();
+
+
+
+
+
 });
+
+//creamos la funcion "nuevas recetas" 
+function printNews (){
+	$("#noticias").append("Nuevas Recetas");
+
+};
+
+
+
+
+	
 
 
 
